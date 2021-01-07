@@ -3,6 +3,8 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import ElementUI from 'element-ui'
+import '@/css/index.scss' // global css
+import '@/css/mainTheme/index.scss' // theme css
 
 Vue.use(ElementUI)
 
