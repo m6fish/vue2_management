@@ -3,8 +3,10 @@
 </template>
 
 <style lang="scss" scoped>
+@import '@/css/mainTheme/mixin.scss';
 .header {
-  background-color: #0fb0ef;
+  background-color: $header-bg;
+
 }
 </style>
 

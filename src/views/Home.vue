@@ -1,9 +1,9 @@
 <template>
   <div class="home">
-    <Header/>
     <el-container>
+        <Aside/>
         <el-container class="content">
-            <Aside/>
+            <Header/>
             <Main/>
         </el-container>
     </el-container>
@@ -16,7 +16,8 @@
   background-color: #0fb0ef;
 }
 .content {
-  height:calc(100vh - 50px);
+  height:calc(100vh);
+  flex-direction: column;
 }
 
 </style>

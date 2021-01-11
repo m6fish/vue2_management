@@ -8,8 +8,9 @@
 </template>
 
 <style lang="scss" scoped>
+@import '@/css/mainTheme/mixin.scss';
 .main {
-    background-color: #e8e5e5;
+    background-color: $main-bg;
 }
 </style>
 
