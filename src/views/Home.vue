@@ -1,9 +1,9 @@
 <template>
   <div class="home">
     <el-container>
-        <Aside/>
+        <Aside :isFolded="isFolded"/>
         <el-container class="content">
-            <Header/>
+            <Header :isFolded.sync="isFolded"/>
             <Main/>
         </el-container>
     </el-container>
@@ -12,9 +12,6 @@
 
 <style lang="scss" scoped>
 
-.header {
-  background-color: #0fb0ef;
-}
 .content {
   height:calc(100vh);
   flex-direction: column;
@@ -33,6 +30,13 @@ export default {
         Aside,
         Header,
         Main
+    },
+    data () {
+        return {
+            isFolded: false
+        }
+    },
+    methods: {
     }
 }
 </script>

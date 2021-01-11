@@ -1,7 +1,9 @@
 <template>
     <el-aside class="aside">
         <div class="icon-area">LOGO</div>
-        <div class="menu">456</div>
+        <div class="menu">
+            {{isFolded}}
+        </div>
     </el-aside>
 </template>
 
@@ -18,6 +20,13 @@
 
 <script>
 export default {
-    name: 'Aside'
+    name: 'Aside',
+    props: {
+        isFolded: Boolean // 控制側邊展開縮合
+    },
+    data () {
+        return {
+        }
+    }
 }
 </script>
